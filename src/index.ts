@@ -35,10 +35,13 @@ bot.on('inline_query', ctx => {
   ctx.answerInlineQuery(result)
 })
 
-bot.command("license", ctx => {
-  ctx.reply(`LICENSE
-  
-  `)
+bot.command("/license", ctx => {
+  ctx.reply(`<b>License from the code I used to avoid making the spongebob-ifier myself :)</b>
+https://github.com/denk0403/Mocking-Spongebob/blob/master/LICENSE
+
+<b>My license</b>
+https://github.com/Ichicoro/mockingspongebot/blob/master/LICENSE
+`, { parse_mode: "HTML" })
 })
 
 bot.launch()
